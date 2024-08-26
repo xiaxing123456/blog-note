@@ -20,7 +20,7 @@ export default defineConfig({
   title: process.env.VITE_DOCS_TITLE,
   description: '前端笔记',
   assetsDir: 'static',
-  outDir: './dist',
+  outDir: '../docs',
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
     outlineTitle: '导览',
