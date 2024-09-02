@@ -13,7 +13,8 @@
 ```json
 {
   "scripts": {
-    "test": "vitest"
+    "test": "vitest", // 单元测试命令
+    "coverage": "vitest run --coverage" // 测试覆盖率
   }
 }
 ```

@@ -54,3 +54,9 @@ export default defineConfig({
 - 命令行终端: `--environment=<env>`
 
 Vitest 中的默认测试环境是一个 Node.js 环境。如果你正在构建 Web 端应用，你可以使用 `jsdom` 或 `happy-dom` 这种类似浏览器(browser-like)的环境来替代 Node.js。 如果你正在构建边缘计算函数，你可以使用 `edge-runtime` 环境
+
+### setupFiles
+
+- 类型： `string | string[]`
+
+setup 文件的路径。它们将运行在每个测试文件之前。

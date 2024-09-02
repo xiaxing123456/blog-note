@@ -1,4 +1,4 @@
-# API 参考
+# [API 参考](https://test-utils.vuejs.org/api/)
 
 ## mount
 
@@ -101,7 +101,36 @@ const wrapper = mount(Component, {
   });
   ```
 
+#### attrs
+
+- 类型： `Record<string, unknown>`
+- 描述：将 HTML 属性设置为 component。
+- 案例:
+
+  - `Component.spec.js`
+
+  ```ts
+  import { mount } from '@vue/test-utils';
+  import Component from './Component.vue';
+
+  test('attrs', () => {
+    const wrapper = mount(Component, {
+      attrs: {
+        id: 'hello',
+        disabled: true,
+      },
+    });
+
+    expect(wrapper.attributes()).toEqual({
+      disabled: 'true',
+      id: 'hello',
+    });
+  });
+  ```
+
 ### Methods
+
+``
 
 #### get
 

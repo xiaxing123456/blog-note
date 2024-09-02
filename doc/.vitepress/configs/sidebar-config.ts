@@ -21,7 +21,32 @@ function getDocsSidebar() {
                 { text: '快速起步', link: '/docs/unitTest/vitest/' },
                 {
                   text: '配置',
+                  collapsed: true,
                   items: [{ text: '配置索引', link: '/docs/unitTest/vitest/configIndex' }],
+                },
+                {
+                  text: 'API',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: 'Test API Reference',
+                      link: '/docs/unitTest/vitest/api/testAPIReference',
+                    },
+                  ],
+                },
+                {
+                  text: '案例',
+                  collapsed: true,
+                  items: [
+                    {
+                      text: '成本插件单元测试配置',
+                      link: '/docs/unitTest/vitest/demo',
+                    },
+                    {
+                      text: '基础文件代码',
+                      link: '/docs/unitTest/vitest/demo/base-file.md',
+                    },
+                  ],
                 },
               ],
             },
