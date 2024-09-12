@@ -67,11 +67,21 @@ function getDocsSidebar() {
         {
           text: '前端知识',
           collapsed: true,
-          item: [
+          items: [
+            {
+              text: 'nodejs',
+              collapsed: true,
+              items: [
+                {
+                  text: 'express框架搭建',
+                  link: '/docs/web/nodejs/express/',
+                },
+              ],
+            },
             {
               text: 'axios请求',
               collapsed: true,
-              item: [
+              items: [
                 {
                   text: 'base64编码传参问题',
                   link: '/docs/web/axios/base64.md',
@@ -87,6 +97,20 @@ function getDocsSidebar() {
             {
               text: '安装 nvm',
               link: '/docs/nvm/',
+            },
+            {
+              text: 'linux 安装nvm',
+              link: '/docs/nvm/linux',
+            },
+          ],
+        },
+        {
+          text: 'linux',
+          collapsed: true,
+          items: [
+            {
+              text: 'linux 常用命令',
+              link: '/docs/linux/',
             },
           ],
         },
