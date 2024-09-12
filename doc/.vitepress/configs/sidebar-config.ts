@@ -80,6 +80,16 @@ function getDocsSidebar() {
             },
           ],
         },
+        {
+          text: 'nvm 管理 node版本',
+          collapsed: true,
+          items: [
+            {
+              text: '安装 nvm',
+              link: '/docs/nvm/',
+            },
+          ],
+        },
       ],
     },
   ];
