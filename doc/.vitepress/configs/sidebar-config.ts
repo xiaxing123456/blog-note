@@ -63,6 +63,23 @@ function getDocsSidebar() {
             },
           ],
         },
+        { text: 'Cocos Creator', collapsed: true, item: [] },
+        {
+          text: '前端知识',
+          collapsed: true,
+          item: [
+            {
+              text: 'axios请求',
+              collapsed: true,
+              item: [
+                {
+                  text: 'base64编码传参问题',
+                  link: '/docs/web/axios/base64.md',
+                },
+              ],
+            },
+          ],
+        },
       ],
     },
   ];
